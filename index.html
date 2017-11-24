@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo" ></p>
+
+<script>
+	var add = (function () {
+	var count = 0;
+	return function () {return count += 1;}
+})();
+add();
+add();
+alert(add());
+document.getElementById("demo").innerHTML = "i";
+</script>
+
+</body>
+</html>
